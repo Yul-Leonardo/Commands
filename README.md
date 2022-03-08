@@ -1,3 +1,3 @@
 # Commands
 
-Some of my favorite Vim,Vimmium and Powershell Commands that I use daily.
+Some of my favorite Vim,Vimium and Powershell Commands that I use daily.
