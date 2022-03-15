@@ -314,3 +314,111 @@ dp or :diffpu[t] - put difference (to other buffer)
 // Tip To view the differences of files, one can directly start
    Vim in diff mode by running vimdiff in a terminal. One can 
    even set this as git difftool.
+   
+   __EXITING__
+
+    :qa                     Closes all files
+    :qa!                    Closes all files, abandon changes
+    :w                      Save
+    :wq / x                 Save and close file
+    :q                      Close file
+    :q!                     Close file, abandon changes                     
+    :cq                     Works like :qa, but throws an error
+    :cquit                  Works like :qa, but throws an error
+    ZZ                      Save and quit                                   !
+    ZQ                      Quit without checking changes                   
+
+
+                                    __NAVIGATING__
+
+    h j k l                 Arrow keys
+    <C-U> / <C-D>           Half-page up/down
+    <C-B> / <C-F>           Page up/down
+    b / w                   Previous/next word                              !
+    ge / e                  Previous/next end of word                       !
+
+//Line
+
+    0                       Start of line                                   !
+    ^                       Start of line (after whitespace)
+    $                       End of line
+
+//Character
+
+    fc                      Go forward to character c                       !
+    Fc                      Go backward to character c                      !
+
+//Document 
+
+    gg                      First line
+    G                       Last line
+    :n                      Go to line n                                    !
+    nG                      Go to line n
+
+//Window
+
+    zz                      Center this line                                !
+    zt                      Top this line
+    zb                      Bottom this line
+    H                       Move to top of screen                           !
+    M                       Move to middle of screen                        !
+    L                       Move to bottom of screen                        !
+
+//Search
+
+    n                       Next matching search pattern
+    N                       Previous macht
+    *                       Next whole word under cursor                    !
+    #                       Previous whole word under cursor
+
+//Tab pages !!!
+
+    :tabedit [file]         Edit file in a new tab
+    :tabfind [file]         Open file if exists in new tab
+    :tabclose               Close current tab
+    :tabs                   List all tabs
+    :tabfirst               Go to first tab
+    :tablast                Go to last tab
+    :tabn                   Go to next tab
+    :tabp                   Go to previous tab
+
+
+                                    __EDITING__
+
+    a                       Append
+    A                       Append from end of line
+    i                       Insert
+    o                       Next line                                       !
+    O                       Previous line                                   !
+    s                       Delete char and insert                          !
+    S                       Delete line and insert
+    C                       Delete until end of line and insert
+    r                       Replace one character
+    R                       Enter Replace mode                              !!!
+    u                       Undo changes
+    <C-R>                   Redo changes                                    !
+
+                                    __MARKS__
+
+    ma                      Mark this cursor position as a                  !
+    'a                      Jump to the beginning of the line with position a
+    d'a                     Delete from current position ot position of mark a
+    c'a                     Change text from current line to line of a
+    :marks                  List all current marks
+    :delm a                 Delet mark a
+    :delm a-d               Delete marks a, b, c, d
+    :del abc                Delete marks a, b, c
+
+                                    __INTERESTING__
+
+    =                       Autoindent
+    gU                      Uppercase
+    gUU                     Uppercase line
+    gu                      Lowercase
+    guu                     Lowercase line
+    :set spell spelllang=en_us  Turn on US English spell checking
+    va + ( / )              Visualizes the hole block
+    
+
+   
+   
