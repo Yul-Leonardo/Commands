@@ -1,1 +1,50 @@
 
+                                         __INIT.VIM__
+
+set number
+set noerrorbells
+set tabstop=4 softtabstop=4
+set shiftwidth=4
+set expandtab
+set smartindent
+set nu
+set nowrap
+set noswapfile
+set smartcase
+set nobackup
+set incsearch
+set background=dark
+
+call plug#begin('C:/Users/yulru/AppData/Local/nvim/autoload/plugged')
+
+Plug 'https://github.com/preservim/nerdtree' "Nerdtree
+Plug 'https://github.com/vim-airline/vim-airline' "Airline
+Plug 'psliwka/vim-smoothie' "Very smooth scrolling 
+Plug 'Yggdroot/indentLine' "show indentation lines
+Plug 'tpope/vim-commentary' "Better commenting
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'ryanoasis/vim-devicons'
+Plug 'jiangmiao/auto-pairs'
+Plug 'rafi/awesome-vim-colorschemes'
+Plug 'flazz/vim-colorschemes'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'alvan/vim-closetag'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-commentary'
+Plug 'yuezk/vim-js'
+Plug 'maxmellon/vim-jsx-pretty'
+Plug 'HerringtonDarkholme/yats.vim'
+Plug 'shaunsingh/nord.nvim'
+Plug 'kyoz/purify'
+Plug 'mlaursen/vim-react-snippets'
+Plug 'prettier/vim-prettier', {'do': 'yarn install'}
+
+call plug#end()
+
+nnoremap <C-t> :NERDTreeToggle<CR>
+
+let g:NERDTreeDirArrowExpandable="+"
+let g:NERDTreeDirArrowCollapsible="~"
+
+colorscheme purify
