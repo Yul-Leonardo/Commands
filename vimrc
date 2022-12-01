@@ -1,6 +1,7 @@
 syntax on
 set colorcolumn=80
 
+set spelllang=en_us,de_de,es
 set spell
 
 set ruler
@@ -11,8 +12,6 @@ set wildmode=list:longest
 "Search Options
 set hlsearch
 set ignorecase
-set incsearch
-set smartcase
 
 set noerrorbells
 set visualbell
