@@ -1,5 +1,4 @@
 syntax on
-set colorcolumn=80
 
 set spelllang=en_us,de_de,es
 set spell
