@@ -33,7 +33,7 @@ set showcmd
  "Show the mode on the last line of the screen
 set showmode
 
-colorscheme peachpuff
+colorscheme darkblue
 
 "Changes Cursor in Insert mode and in normal mode
 let &t_SI = "\e[6 q"
